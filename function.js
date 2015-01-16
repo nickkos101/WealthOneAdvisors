@@ -1,43 +1,43 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
   function scrollY() {
     return window.pageYOffset || document.documentElement.scrollTop;
   }
 
-  $(window).scroll(function () {
+  jQuery(window).scroll(function () {
     if (scrollY() < 10){
-      $('header').css('height','200px');
+      jQuery('header').css('height','200px');
       setTimeout(function(){
-        $('.logo').fadeIn();  
+        jQuery('.logo').fadeIn();  
       }, 1000);    
     }
     else {
-     $('.logo').fadeOut();
-     $('header').css('height','50px');       
+     jQuery('.logo').fadeOut();
+     jQuery('header').css('height','50px');       
    }
    if (scrollY() != 0 || scrollY() > 10) {
-     $('.logo').fadeOut();
-     $('header').css('height','50px');    
+     jQuery('.logo').fadeOut();
+     jQuery('header').css('height','50px');    
    }
  });
 
     //Animate the Call to Action
 
-    $('.call-to-action').animate({'left': '0px'}, 3500);
+    jQuery('.call-to-action').animate({'left': '0px'}, 3500);
 
     //Modal Box Stuff
 
-    $('.call-to-action').click(function(){
-      $('.modalbox').fadeIn();
-      $('.modalbackground').fadeIn();
+    jQuery('.call-to-action').click(function(){
+      jQuery('.modalbox').fadeIn();
+      jQuery('.modalbackground').fadeIn();
     });
-    $('.modalbackground').click(function(){
-      $('.modalbox').fadeOut();
-      $('.modalbackground').fadeOut();
+    jQuery('.modalbackground').click(function(){
+      jQuery('.modalbox').fadeOut();
+      jQuery('.modalbackground').fadeOut();
     });
 
-    $('.slider').fadeIn(1000,function(){
-      $('.slider').slick({
+    jQuery('.slider').fadeIn(1000,function(){
+      jQuery('.slider').slick({
         infinite: true,
         autoplay: true,
         arrows: false,
@@ -52,20 +52,24 @@ $(document).ready(function(){
     //Initialize the main homepage slider
 
     //Initialize the client carousel
-    $('.client-list').slick({
+    jQuery('.client-list').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: false,
       autoplaySpeed: 2000,
     });
 
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
+    //Initialize Tabs System
+
+    jQuery( ".tabs" ).tabs();
+
+    jQuery(function() {
+      jQuery('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          var target = jQuery(this.hash);
+          target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
           if (target.length) {
-            $('html,body').animate({
+            jQuery('html,body').animate({
               scrollTop: target.offset().top
             }, 1000);
             return false;

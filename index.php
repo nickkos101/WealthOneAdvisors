@@ -1,60 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>WealthOne Advisors</title>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width">
-</head>
-<body id="top">
-    <header>
-        <img class="logo" src="images/logo.png">
-        <nav>
-            <div class="gold-border">
-                <div class="container">
-                    <div class="col-wrap">
-                        <div class="column full taligncenter">
-                            <ul>
-                                <li>
-                                    <img src="images/home.png" /> <a href="">Home</a>
-                                </li>
-                                <li>
-                                    <a href="">Who We Are</a>
-                                </li>
-                                <li>
-                                    <a href="">Why we're Different</a>
-                                </li>
-                                <li>
-                                    <a href="">What we Do</a>
-                                </li>
-                                <li>
-                                    <a href="">Our Process</a>
-                                </li>
-                                <li>
-                                    <a href="">Resources</a>
-                                </li>
-                                <li>
-                                    <a href="">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="">Contact Us</a>
-                                </li>
-                                <li class="login-form">
-                                    <img src="images/lock.png" /><a href="#">Client Login</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
+<?php get_header(); ?>
 <main>
     <div class="slider-wrap">
             <!--
@@ -64,11 +8,11 @@
             </div> -->
             <section class="slider">
                 <div class="slide">
-                    <img src="images/downtown.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/downtown.jpg">
                 </div>
             </section>
             <div class="overlay">
-                <img src="images/slogan.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/slogan.png">
             </div>
         </div>
         <section class="banner-action">
@@ -182,7 +126,7 @@
                                 <div class="video-col taligncenter">
                                     <div class="videoTitleHeader">Elite Advisor</div>
                                     <div class="videoImage">
-                                        <img src="images/video_1.jpg" alt="Elite Advisor" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/video_1.jpg" alt="Elite Advisor" />
                                     </div>
                                     <div class="callOutSubContent videoContent">
                                         Shares his keys to success and where he sees opportunity for investors.
@@ -194,7 +138,7 @@
                                 <div class="video-col taligncenter">
                                     <div class="videoTitleHeader">Elite Advisor</div>
                                     <div class="videoImage">
-                                        <img src="images/video_1.jpg" alt="Elite Advisor" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/video_1.jpg" alt="Elite Advisor" />
                                     </div>
                                     <div class="callOutSubContent videoContent">
                                         Shares his keys to success and where he sees opportunity for investors.
@@ -206,7 +150,7 @@
                                 <div class="video-col taligncenter">
                                     <div class="videoTitleHeader">Elite Advisor</div>
                                     <div class="videoImage">
-                                        <img src="images/video_1.jpg" alt="Elite Advisor" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/video_1.jpg" alt="Elite Advisor" />
                                     </div>
                                     <div class="callOutSubContent videoContent">
                                         Shares his keys to success and where he sees opportunity for investors.
@@ -252,10 +196,10 @@
                                         </div>
                                         <div class="column half talignright">
                                             <div class="social-buttons">
-                                                <a href="#" target="_blank" class="socialIcons iconFB" ><img src="images/icon_social_fb.png" alt="FaceBook"></a>
-                                                <a href="#" target="_blank" class="socialIcons iconTW"><img src="images/icon_social_tw.png" alt="Twitter"></a>
-                                                <a href="#" target="_blank" class="socialIcons iconYT"><img src="images/icon_social_yt.png" alt="YouTube"></a>
-                                                <a href="#" target="_blank" class="socialIcons iconLI"><img src="images/icon_social_li.png" alt="LinkedIn"></a> 
+                                                <a href="#" target="_blank" class="socialIcons iconFB" ><img src="<?php echo get_template_directory_uri(); ?>/images/icon_social_fb.png" alt="FaceBook"></a>
+                                                <a href="#" target="_blank" class="socialIcons iconTW"><img src="<?php echo get_template_directory_uri(); ?>/images/icon_social_tw.png" alt="Twitter"></a>
+                                                <a href="#" target="_blank" class="socialIcons iconYT"><img src="<?php echo get_template_directory_uri(); ?>/images/icon_social_yt.png" alt="YouTube"></a>
+                                                <a href="#" target="_blank" class="socialIcons iconLI"><img src="<?php echo get_template_directory_uri(); ?>/images/icon_social_li.png" alt="LinkedIn"></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -267,97 +211,20 @@
                                 <div class="container">
                                     <div class="client-list">
                                         <div class="slide">
-                                            <img src="images/rep.png">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/rep.png">
                                         </div>
                                         <div class="slide">
-                                            <img src="images/ut-sandiego.png">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/ut-sandiego.png">
                                         </div>
                                         <div class="slide">
-                                            <img src="images/jfp.png">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/jfp.png">
                                         </div>
                                         <div class="slide">
-                                            <img src="images/cfp.png">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cfp.png">
                                         </div>
                                     </div>
                                 </div>
                             </section>
                         -->
                     </main>
-                    <footer>
-                        <div class="container">
-                            <div class="col-wrap">
-                                <div class"column full">
-                                    <p>WealthOne Advisors, LLC</p>
-                                    <p class="smallerp">2136 Puerto del Mundo <span class="fdivide">//</span> Fallbrook, CA 92028 <span class="fdivide">//</span> Phone: 855.Low.Beta (569.2382) <span class="fdivide">//</span> Fax: 800.405.4547 <span class="fdivide">//</span> <a href="#">Map and Directions</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                    <div class="backtotop">
-                        <a href="#top">Back to Top</a>
-                    </div>
-                    <section class="copyright-credits">
-                        <div class="container">
-                            <div class="col-wrap">
-                                <div class="column full taligncenter">
-                                    <p>&copy; 2015 WealthOne Advisors. All rights reserved. <a href="http://inspyregroup.com" title="San Diego Web Design by Inspyre">Web design by Inspyre.</a></p>
-                                </div>
-                            </div>
-                            <div class="col-wrap">
-                                <div class="affiliate-logos">
-                                    <div class="column fifth">
-                                        <div class="logo-image">
-                                            <img src="images/sipc.png" alt="CFP" />
-                                        </div>
-                                    </div>
-                                    <div class="column fifth">
-                                        <div class="logo-image">
-                                            <img src="images/lpl.png" alt="CFP" />
-                                        </div>
-                                    </div>
-                                    <div class="column fifth">
-                                        <div class="logo-image">
-                                            <img src="images/5star.png" alt="CFP" />
-                                        </div>
-                                    </div>
-                                    <div class="column fifth">
-                                        <div class="logo-image">
-                                            <img src="images/cfp.png" alt="CFP" />
-                                        </div>
-                                    </div>
-                                    <div class="column fifth">
-                                        <div class="logo-image">
-                                            <img src="images/25years.png" alt="CFP" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="modalbox minimodal">
-                        <h1>5 Ways to Retire Early</h1>
-                        <div class="col-wrap">
-                            <div class="column">
-                                <form>
-                                    <label>Your Name:</label>
-                                    <input type="text" placeholder="name">
-                                    <label>Your Email:</label>
-                                    <input type="email" placeholder="email">
-                                    <input type="submit" value="Download Now">
-                                </form>
-                                <img src="images/ss7.jpg">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modalbackground"></div>
-                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                        <script type="text/javascript" src="slick/slick.min.js"></script>
-                        <script type="text/javascript" src="function.js"></script>
-                    </body>
-                    </html>
+                    <?php get_footer(); ?>

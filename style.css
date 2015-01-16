@@ -26,8 +26,8 @@ span {color:#fff; padding:10px;}
 
 p, label, li {font-size: 14px;}
 
-input[type=text], input[type=password], input[type=email], textarea, {
-	display: block;	width: 100%; margin-bottom: 10px; margin-top: 10px;	font-size: 14px;
+input[type=text], input[type=password], input[type=email], textarea {
+width: 100%; margin-bottom: 10px; margin-top: 10px;	font-size: 16px; width: 100%; background:#D5C8A9; border:1px solid #a29b8a; color:#000; resize:none; padding:10px 5px;
 }
 input[type=submit], button, .btn {cursor:pointer; display:inline-block; font-size:14px; padding:10px 25px; margin-bottom: 10px; background-color: transparent; border:none; font-weight:300; color:#a29b8a; border-radius:8px; border: 1px solid #a29b8a; text-transform: uppercase;}
 
@@ -142,6 +142,22 @@ p.blog-summary {border-top: double #4e4b46; text-transform: uppercase; margin-to
 .copyright-credits a {color: #9c8767; text-decoration: none; cursor: pointer;}
 .affiliate-logos {padding: 20px 20px 40px; }
 .logo-image {margin: 0 15%;}
+
+/* Page */
+
+.page {margin-top:220px;}
+
+.tabs {margin-top: 10px; margin-bottom: 10px;}
+.tabs ul {padding:0px;}
+.tabs ul li {display: inline-block; border:1px solid #a49886; border-bottom: 0px; background-image: url(images/bkg_stripes_dark.jpg); font-family: 'Marcellus', serif; vertical-align: top; margin-left:10px; margin-right:10px; background-color:rgba(0,0,0,0.8); color:#a49886; padding:10px 15px;}
+.tabs ul li:first-of-type {margin-left: 0px;}
+.tabs ul li a {text-decoration: none; color:inherit;}
+.tabs div {padding:10px 15px; background:url(images/bkg_tile.jpg) repeat; border:1px solid #a49886;}
+
+/* Sidebar */
+
+.sidebar {padding-left:50px;}
+
 /* Footer */
 
 footer { background: url(images/bkg_stripes_dark.jpg); color: #a49886; text-align: center; padding: 35px 20px; font-size: 18px; -webkit-print-color-adjust: exact; }
