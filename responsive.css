@@ -1,0 +1,31 @@
+@media (max-width:1050px) {
+
+	/* Header */
+	
+	header .logo {display: none;}
+	main {margin-top: 88px;}
+	.slider .overlay, .slider-wrap .overlay {bottom: auto; top:35%; padding: 0px 10px;}
+	.slider-wrap {min-height:100%;}
+
+	/* Homepage */
+
+	.banner-text p {font-size: 14px;}
+
+	.site-options .third {width: 100%;}
+	.options-square {border:none; border-bottom:1px solid #000;}
+
+	.col-wrap {padding: 0px 10px;}
+
+	.video-piece {width: 100%; border:none;}
+
+	.blog-preview .third {width: 100%;}
+}
+
+@media (max-width:1050px) {
+	.site-content .two-thirds {width: 100%;}
+	.site-content .third {width: 100%;}
+	.sidebar {padding-left: 0px;}
+	header nav {display: none;}
+	.resp-menu {display: block;}
+	header .resp-menu .logo {display: block;}
+}
